@@ -38,7 +38,7 @@ namespace IISTools
 
         private void WriteElement(StringBuilder builder, IISRewriteMapElement element)
         {
-            builder.AppendFormat("        <add key=\"{0}\" value=\"{1}\" />", element.From, element.To);
+            builder.AppendFormat("        <add key=\"{0}\" value=\"{1}\" />", element.Key, element.Value);
             builder.Append(Environment.NewLine);
         }
 

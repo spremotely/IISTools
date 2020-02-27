@@ -46,11 +46,11 @@ namespace IISTools
         {
             return new IISRewriteMapElement
             {
-                From = element.Attributes()
+                Key = element.Attributes()
                     .FirstOrDefault(a => 
                         string.Equals(a.Name.LocalName, "key", StringComparison.OrdinalIgnoreCase))?.Value,
 
-                To = element.Attributes()
+                Value = element.Attributes()
                     .FirstOrDefault(a =>
                         string.Equals(a.Name.LocalName, "value", StringComparison.OrdinalIgnoreCase))?.Value
             };

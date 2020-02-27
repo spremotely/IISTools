@@ -2,7 +2,7 @@
 {
     public class IISRewriteMapElement
     {
-        public string From { get; set; }
-        public string To { get; set; }
+        public string Key { get; set; }
+        public string Value { get; set; }
     }
 }
